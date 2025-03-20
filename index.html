@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avaliação Final de HTML e CSS</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
+    </head>
     <body>
-        <header><h2>Lucas Freitas Cordeiro</h2></header>
-        <nav><p>Colocar um tipo qualquer de menu</p></nav>
-        <section><p>Redes sociais e saúde mental: como lidar com a toxicidade virtual?</p></section>
-        <article><p>Botar figura</p></article>
-        <aside><p>Quais os impactos negativos de um ambiente de trabalho?</p></aside>
+        <header><h3>Lucas Freitas Cordeiro</h2></header>
+        <nav>
+            <div class="menu-icon">&#9776;</div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#saude-mental">Redes sociais e saúde mental</a></li>
+                <li><a href="#ambiente-trabalho">Impactos no ambiente de trabalho</a></li>
+            </ul>
+        </nav>
+        <div class="container c0">
+            <div class="container c1" id="saude-mental">
+                <section>
+                    <h1>Redes sociais e saúde mental: como lidar com a toxicidade virtual?</h1>
+                    <p>As redes sociais se tornaram parte integrante da vida cotidiana, conectando pessoas em diferentes partes do mundo e permitindo o compartilhamento de ideias, opiniões e experiências. No entanto, o impacto dessas plataformas na saúde mental tem sido amplamente debatido, especialmente quando os usuários são expostos a ambientes virtuais tóxicos. Comentários negativos, discursos de ódio e o anonimato em interações podem gerar sentimentos de ansiedade, depressão e até baixa autoestima, agravados pela constante comparação com padrões irreais de vida e sucesso compartilhados online.</p>
+                    <p>Lidar com a toxicidade virtual exige uma abordagem consciente por parte dos usuários. Uma das formas mais eficazes de proteger a saúde mental é desenvolver um senso crítico em relação ao conteúdo consumido. Selecionar com cuidado os perfis seguidos, evitar cair em comparações irrealistas e limitar o tempo gasto nas plataformas são passos importantes. Além disso, praticar o autocuidado digital, incluindo pausas regulares das redes sociais, pode ajudar a reduzir a sobrecarga emocional que essas interações podem causar.</p>                    
+                    <p>Por outro lado, as próprias redes sociais também podem desempenhar um papel importante na criação de ambientes mais saudáveis, oferecendo opções para os usuários filtrarem o conteúdo que preferem evitar e incentivando uma cultura de empatia e respeito. No entanto, o foco principal deve estar na educação digital e no desenvolvimento de habilidades emocionais para lidar com conflitos online, promovendo diálogos construtivos e evitando a exposição prolongada a situações que impactem negativamente o bem-estar mental. Combinar uma atitude proativa pessoal com ferramentas de autocontrole é essencial para manter uma relação saudável com as redes sociais.</p>
+                </section>
+                <article><img src="https://seucreditodigital.com.br/wp-content/uploads/2025/02/seucreditodigital.com.br-principal-causa-de-tristeza-no-trabalho-e-revelada-confira-tristeza-trabalho.jpg"></article>
+            </div>
+            <div class="container c2" id="ambiente-trabalho">
+                <aside>
+                    <h2>Quais os impactos negativos de um ambiente de trabalho?</h2>
+                    <ol>
+                        <li><p>Estresse crônico: Carga de trabalho excessiva, prazos apertados e pressão constante para performar podem gerar altos níveis de estresse, levando a esgotamento físico e mental.</p></li>
+                        <li><p>Baixa produtividade: Um ambiente de trabalho tóxico pode prejudicar a capacidade de concentração e o desempenho, resultando em queda da produtividade.</p></li>
+                        <li><p>Burnout: Excesso de trabalho, falta de apoio e reconhecimento podem levar ao esgotamento emocional, conhecido como burnout, afetando tanto a saúde física quanto mental.</p></li>
+                        <li><p>Problemas de saúde mental: Clima negativo, conflitos frequentes e falta de apoio psicológico podem agravar ou causar ansiedade, depressão e outros transtornos mentais.</p></li>
+                        <li><p>Desmotivação: A falta de reconhecimento, oportunidades de crescimento e um ambiente opressor podem diminuir a motivação dos funcionários, levando a desinteresse nas atividades diárias.</p></li>
+                        <li><p>Turnover elevado: Ambientes de trabalho desfavoráveis resultam em alta rotatividade de funcionários, gerando custos com contratações e treinamentos constantes.</p></li>
+                        <li><p>Isolamento social: Falta de colaboração, competitividade excessiva ou cultura de individualismo podem gerar sentimentos de solidão no ambiente de trabalho.</p></li>
+                    </ol>
+            </aside>
+            </div>
+        </div>
         <footer><p>19 de Março de 2025, 10:00, Lucas Freitas Cordeiro</p></footer>
+        <script>
+            document.querySelector('.menu-icon').addEventListener('click', function() {
+                document.querySelector('nav ul').classList.toggle('active');
+            });
+        </script>
     </body>
 </html>
